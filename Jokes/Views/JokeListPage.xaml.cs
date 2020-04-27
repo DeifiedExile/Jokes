@@ -31,15 +31,15 @@ namespace Jokes.Views
             });
         }
 
-        async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            if (e.SelectedItem != null)
-            {
-                await Navigation.PushAsync(new JokeItemPage
-                {
-                    BindingContext = e.SelectedItem as JokeItem
-                });
-            }
-        }
+        //async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
+        //{
+        //    if (e.SelectedItem != null)
+        //    {
+        //        await Navigation.PushAsync(new JokeItemPage
+        //        {
+        //            BindingContext = e.SelectedItem as JokeItem
+        //        });
+        //    }
+        //}
     }
 }
